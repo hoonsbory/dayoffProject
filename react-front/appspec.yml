@@ -1,0 +1,15 @@
+# version: 0.0
+# os: linux
+# files:
+#   - source:  /
+#     destination: /home/ubuntu/react-travis
+
+
+# hooks:
+#   ApplicationStart:
+#     - location: deploy.sh
+#       timeout: 250
+#   BeforeInstall:
+#     - location: delete_modules.sh
+#       timeout: 60
+ 

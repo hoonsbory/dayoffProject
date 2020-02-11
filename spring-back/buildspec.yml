@@ -1,0 +1,29 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: openjdk8
+  build:
+    commands:
+      - export MAVEN_CONFIG=''
+      - export GOOGLE_APPLICATION_CREDENTIALS="/home/ubuntu/strong-kit-252505-3da4b777b59f.json"
+      - echo Build Starting on `date`
+      - chmod +x ./mvnw
+      - ./mvnw clean package
+  post_build:
+    commands:
+      - echo $(basename target/*.jar)
+      - pwd
+artifacts:
+  files:
+    - appspec.yml
+    - target/*.jar
+    - scripts/**
+    - visionInsert.csv
+    - newfile
+  discard-paths: yes
+
+cache:
+  paths:
+    - '/root/.m2/**/*'

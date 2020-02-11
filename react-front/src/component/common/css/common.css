@@ -1,0 +1,11 @@
+.pageTitle{
+    width: 90%;
+    margin: 40px auto;
+}
+
+.pageTitle div{
+    font-size: 20pt;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}

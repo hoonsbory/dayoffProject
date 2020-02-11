@@ -1,0 +1,43 @@
+
+.form{
+    width: 60%;
+    min-height: 1500px;
+    /* align-items: center; */
+    /* text-align: center; */
+    /* margin: auto; */
+    /* left: 17%; */
+    position: sticky;
+    left: 20%;
+    top: 44%;
+}
+.reviewWrite{
+    width: 100%;
+    text-align: center;
+    padding: 41px;
+    border-bottom: 1px solid #ced4da;
+}
+.textarea{
+    min-height: 300px;
+}
+form .addReviewBtn{
+    text-align: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 70px;
+      width: 200px;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    padding: 15px;
+    background-color: /*!setting.color_button{*/#585858/*}*/;
+    color: /*!setting.color_button_text{*/white/*}*/;
+  
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    font-size: 15px;
+}
+.FormGroup{
+    padding: 10px;
+}

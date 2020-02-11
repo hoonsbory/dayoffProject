@@ -1,0 +1,77 @@
+.SignUpForm .inputMask{
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.SignUpForm .placeholderAlignRight::-webkit-input-placeholder { text-align: right; }
+.SignUpForm .placeholderAlignRight::-moz-placeholder { text-align: right;  }
+.SignUpForm .placeholderAlignRight:-ms-input-placeholder { text-align: right;  }
+.SignUpForm .placeholderAlignRight:-moz-placeholder { text-align: right;  }
+.SignUpForm .placeholderAlignRight::placeholder { text-align: right;  }
+
+.SignUpForm .error{
+    text-align: center;
+    color:#c92a2a;
+}
+
+.Withdraw{
+    width: 85%;
+    display: inline-block;
+    min-height: 800px;
+    margin-left: 11%;
+    margin-top: 15%;
+}
+
+.Withdraw .error{
+    text-align: center;
+    color:#c92a2a;
+}
+
+.Withdraw .withdrawInfo{
+    margin: 5.0em;
+}
+
+.Withdraw .withdrawInfo div{
+    margin: 1.0em;
+}
+
+.Withdraw .withdrawCode{
+    margin: 5.0em;
+}
+
+.SignUpForm .title{
+    padding-top: 50pt;
+    margin-bottom: 20pt;
+    font-size: 20pt;
+}
+
+.SignUp{
+    width: 40%;
+    margin: 50pt auto;
+    border: 1px solid black;
+      margin-top: 246px;
+}
+
+.UpdateUser{
+    width: 40%;
+    margin: 50pt auto;
+}
+
+.UpdateUserWrapper{
+    width:85%;
+    display: inline-block;
+    min-height: 800px;
+    margin-left: 11%;
+    margin-top: 15%;
+}

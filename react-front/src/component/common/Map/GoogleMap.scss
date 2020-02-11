@@ -1,0 +1,69 @@
+$color: black;
+
+@keyframes sheen {
+  0% {
+    transform: skewY(-45deg) translateX(0);
+  }
+  100% {
+    transform: skewY(-45deg) translateX(12.5em);
+  }
+}
+
+.wrapper {
+  display: inline-block;
+  margin-left: 2%;
+}
+
+.wrapper > select{
+  width: 100%;
+  height: auto;
+  line-height: normal;
+  font-family: inherit;
+  padding: .8em .5em;
+  border: 0;
+  opacity: 0;
+  filter:alpha(opacity=0);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.storesInfotitle  {
+  font-size: 27px;
+  border-bottom: 1px solid black;
+  width: 1400px;
+  margin-bottom: 16px;
+}
+
+.selectbox { 
+  position: relative;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  background: url(https://farm1.staticflickr.com/379/19928272501_4ef877c265_t.jpg) no-repeat 95% 50%; 
+  border: 1px solid #999; z-index: 1; 
+  margin-left: 85.6%;
+}
+
+
+.selectbox label {
+  position: absolute;
+  top: -15px;
+  left: 5px;
+  padding: .8em .5em;
+  color: #999;
+  z-index: -1;
+}
+
+.selectbox select {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-family: inherit;
+  border: 0; opacity: 0;
+  filter:alpha(opacity=0);
+  -webkit-appearance: none;
+        /* 네이티브 외형 감추기 */ 
+  -moz-appearance: none;
+  appearance: none; 
+      }

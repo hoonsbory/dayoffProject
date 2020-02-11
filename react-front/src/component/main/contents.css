@@ -1,0 +1,146 @@
+
+.PContents {
+  width: 88%;
+  overflow: auto;
+  margin-left: 10.2%;
+}
+.PContentItem_box {
+  display: inline-block;
+  width: 94%;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+.PContentItem:hover{
+  text-decoration-line: none;
+}
+.PContentItem {
+  width: 344px;
+  height: 446px;
+  border: 1px solid #c9c9c9;
+  display: inline-block;
+  border-radius: 4px;
+  box-shadow: 0px 0px 4px 4px #EAEAEA;
+  margin-left: 43px;
+  margin-bottom: 40px;
+  margin-top: 10px;
+  
+}
+
+.PHoverContentItem {
+  width: 330px;
+  height: 470px;
+  border: 1px solid #c9c9c9;
+  display: inline-block;
+  border-radius: 4px;
+  box-shadow: 0px 0px 4px 4px #EAEAEA;
+  margin-left: 50px;
+  margin-bottom: 40px;
+  margin-top: 10px;
+  opacity: 0.3;
+}
+
+.PHoverContentItem img{
+  width: 100%;
+  height: 300px;
+  border-bottom: 1px solid #c9c9c9;
+}
+
+.PContentItem img {
+  width: 100%;
+  height: 300px;
+  border-bottom: 1px solid #c9c9c9;
+}
+
+.PHoverContentItem h4{
+  max-height: 20px;
+  margin-left: 10px;
+}
+
+.PHoverContentItem h2 {
+  margin: 4px 0px;
+  margin-left: 10px;
+
+}
+
+.PHoverContentItem p {
+  overflow: hidden;
+  margin: 4px 0px;
+  color: #666;
+  margin-left: 10px;
+}
+
+.PContentItem h4{
+  max-height: 25px;
+  /* min-height: 40px; */
+  margin-left: 10px;
+  overflow: hidden;
+  color : black;
+  font-weight: 200;
+  padding-bottom: 26px;
+}
+
+
+.PContentItem h2 {
+  margin: 4px 0px;
+  margin-left: 10px;
+  font-size : 1em;
+  color: black;
+}
+
+.PContentItem p {
+  overflow: hidden;
+  margin: 4px 0px;
+  color: #666;
+  margin-left: 10px;
+}
+
+.PLocationButton {
+  cursor: pointer;
+}
+
+.PDropButton {
+  position: relative;
+      margin-top: 13%;
+}
+
+.PDropButton select{
+  background-color: #ffffff;
+  border-color: #ffffff;
+  width: 120px;
+  height: 40px;
+  font-size: 18px;
+  right: -88%;
+   position: relative;
+}
+
+.PDropButton select option {
+  font-size: 20px;
+}
+
+.PContentsHeader_aa {
+  font-size: 40px;
+  color: red;
+  margin-right: 20px;
+}
+
+.PContentsHeader_box {
+  border-Bottom: 5px solid #EAEAEA;
+  display: inline-block;
+  height: 70px;
+  width: 1470px;
+  margin-left: 180px;
+}
+
+.PeditButton{
+  float: right;
+  background-color: transparent !important;
+  background-image: none !important;
+  border-color: transparent;
+  border: none;
+  height: 20px;
+}
+
+.nullImg{
+  margin-left: 27%;
+  width: 39%;
+}

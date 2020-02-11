@@ -1,0 +1,51 @@
+.UserGrade{
+    width: 90%;
+    margin: 50px auto;
+}
+
+.UserGrade .gradeBar{
+    width: 70%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #dbe4ff;
+    
+}
+
+.UserGrade .gradeBar div{
+    height: 50px;
+    background-color: #4c6ef5;
+    text-align: center;
+}
+
+
+.UserGrade .gradeBarWrapper {
+    margin: 100px 0px;
+    text-align: center;
+}
+
+.UserGrade .gradeBarWrapper > div{
+    font-size: 14pt;
+}
+
+.UserGrade .gradeBarWrapper > div > div{
+    display: inline-block;
+    margin: 20px;
+    font-size: 16pt;
+}
+
+.UserGrade .state{
+    font-size: 16pt;
+    margin: 20px;
+}
+
+.UserGrade .state > span{
+    margin-right: 50px;
+}
+
+.UserGradeWrapper{
+    width: 85%;
+    display: inline-block;
+    min-height: 800px;
+    margin-left: 11%;
+    margin-top: 15%;
+}

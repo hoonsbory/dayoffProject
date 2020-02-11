@@ -1,0 +1,216 @@
+.ProductAddMessage{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 200;
+    border: 1px solid black;
+    padding: 0.5em;
+    text-align: center;
+    background-color: white;
+}
+
+.ProductAddMessage .productCount{
+    position: absolute;
+    top:5px;
+    right: 5px;
+    background-color: #f03e3e;
+    color:white;
+    width:23px;
+    height: 23px;
+    border-radius: 100%;
+}
+
+.ProductAddMessage .latestProduct img{
+    margin: auto;
+    border-radius: 0.5em;
+    width: 6.0em;
+    height: 6.0em;
+}
+
+.ProductAdd {
+    width:85%;
+    display: inline-block;
+    min-height: 1000px;
+    margin-left: 11%;
+        margin-top: 11%;
+}
+
+.ProductAdd .my-collapsible{
+    width: 100%;
+    border: 2px solid black;
+    background-color: white;
+    margin: 50px auto;
+}
+
+.ProductAdd .my-collapsible .my-collapsible__toggle{
+    display: block;
+    height: 100px;
+    width: 100%;
+    padding-left: 4.0em;
+    cursor: pointer;
+    user-select: none;
+}
+
+.ProductAdd .my-collapsible .my-collapsible__toggle:before { 
+    content: ""; 
+    display: inline-block; 
+    width: 1px; 
+    height: 100%; 
+    margin-right: 0; 
+    vertical-align: middle;
+}
+
+.ProductAdd .my-collapsible .smallTitle{
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 14pt;
+}
+
+.ProductAdd .my-collapsible .title{
+    display: inline-block;
+    width:90%;
+    font-size: 20pt;
+    vertical-align: middle;
+}
+
+.ProductAdd .my-collapsible .toggleBtn{
+    display: inline-block;
+    font-size: 30px;
+    vertical-align: middle;
+    font-weight: 400;
+}
+
+.ProductAdd .my-collapsible .ProductForm{
+
+}
+
+.ProductAdd .error{
+    text-align: center;
+    color:#c92a2a;
+}
+
+.ProductAdd .typeError{
+    color:#c92a2a;
+}
+
+.ProductAdd .loading{
+    /* visibility: hidden; */
+    display: none;
+    text-align: center;
+    background-color: white;
+}
+
+.ProductAdd .loading img{
+    width: 50px;
+    height: 50px;
+}
+
+
+.ProductAdd .filebox .fileBtnLabel { 
+    display: inline-block; 
+    padding: .5em .75em; 
+    color: white; 
+    font-size: 12pt;
+    line-height: normal; 
+    vertical-align: middle; 
+    background-color: #495057; 
+    cursor: pointer; 
+    border: 1px solid #495057; 
+    border-radius: .25em; 
+    margin: 0em 0.5em;
+} 
+
+.ProductAdd .filebox input[type="file"] { 
+    /* 파일 필드 숨기기 */ 
+    display: inline-block; 
+    position: absolute; 
+    width: 1px; 
+    height: 1px; 
+    padding: 0; 
+    margin: -1px; 
+    overflow: hidden; 
+    clip:rect(0,0,0,0); 
+    border: 0; 
+}
+
+/* named upload */ 
+.ProductAdd .filebox .upload-name { 
+    display: inline-block; 
+    padding: .7em .75em;   /* label의 패딩값과 일치 */ 
+    font-size: 12pt; 
+    font-family: inherit; 
+    line-height: normal; 
+    vertical-align: middle; 
+    background-color: white; 
+    border: 1px solid #343a40; 
+    border-radius: .25em; 
+    -webkit-appearance: none; /* 네이티브 외형 감추기 */ 
+    -moz-appearance: none; 
+    appearance: none; 
+}
+
+.ProductAdd .ProductForm{
+    margin: 30px;
+    margin-left:60px;
+}
+
+.ProductAdd .productImageFormName{
+    margin-right: 20px;
+    vertical-align: top;
+}
+
+.ProductAdd .productsFileFormName{
+    margin-right: 20px;
+}
+
+.ProductAdd .productImageForm .dropzone{
+    display:inline-block;
+    width: 90%;
+}
+
+.ProductAdd .ProductsFileForm{
+    margin-bottom: 20px;
+}
+
+.ProductAdd .formInfo{
+    border: 1px solid black;
+    margin: 10px 20px 40px 20px;
+    padding:10px;
+}
+
+.ProductAdd .formInfoEx{
+    display: inline;
+    text-decoration: underline;
+    color: #364fc7;
+    cursor: pointer;
+}
+
+.ProductAdd .formInfoEx:hover img{
+    display: block;
+}
+
+.ProductAdd .formInfoEx img{
+    display:none;
+}
+
+.ProductAdd .productAddMenu{
+    width: 80%;
+    margin: 40px auto;
+    min-height: 600px;
+}
+
+.ProductAdd .SelectPreview > div{
+    display: inline-block;
+    min-width: 50px;
+    padding: 0px 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 1.0em;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.27);
+    text-align: center;
+    cursor: pointer;
+}
+
+.ProductAdd .SelectPreview > div:hover{
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+}

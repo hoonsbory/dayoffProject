@@ -1,0 +1,97 @@
+.MContents {
+  width: 72%;
+  margin : auto;  
+}
+.MContentItem_box {
+  margin-left: 50px;
+  display: inline-block;
+}
+.MContentItem {
+  width: 603px;
+  height: 723px;
+  border: 1px solid #c9c9c9;
+  display: inline-block;
+  border-radius: 4px;
+  box-shadow: 0px 0px 4px 4px #EAEAEA;
+  margin-left: 50px;
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+
+.MContentItem img {
+  width: 100%;
+  height: 615px;
+  border-bottom: 1px solid #c9c9c9;
+}
+
+.MContentItem h4{
+  max-height: 20px;
+  margin-left: 20px;
+  font-size: 20px;
+  color : black;
+  font-weight: 300;
+}
+
+
+.MContentItem h2 {
+  margin: 4px 0px;
+  margin-left: 20px;
+  font-size: 27px;
+  color : black;
+  font-weight: 500;
+}
+
+.MContentItem p {
+  overflow: hidden;
+  margin: 4px 0px;
+  color: #666;
+  margin-left: 10px;
+}
+
+.MLocationButton {
+  cursor: pointer;
+}
+
+.MDropButton {
+  margin-left: 1238px;  
+}
+
+.MDropButton select{
+  background-color: #ffffff;
+  border-color: #ffffff;
+  width: 120px;
+  height: 40px;
+  font-size: 18px;
+}
+
+.MDropButton select option {
+  font-size: 20px;
+}
+
+.MContentsHeader_aa {
+  font-size: 40px;
+  color: black;
+  margin-right: 20px;
+  font-weight: 500;
+}
+.tileDiv{
+  width : 73%;
+  margin : auto;
+}
+
+.MContentsHeader_box {
+  border-Bottom: 2px solid #212529;
+  display: inline-block;
+  height: 70px;
+  width: 90%;
+  margin-left: 100px;
+}
+
+.MeditButton{
+  float: right;
+  background-color: transparent !important;
+  background-image: none !important;
+  border-color: transparent;
+  border: none;
+  height: 20px;
+}

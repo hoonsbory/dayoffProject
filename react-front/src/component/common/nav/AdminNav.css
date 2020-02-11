@@ -1,0 +1,80 @@
+.ANav {
+  height: 100%;
+  width: 15%;
+  border-right: 1px solid #c9c9c9;
+  padding: 10px;
+  float: left;
+  color: black;
+  border-top: 1px solid #c9c9c9;
+  position: fixed;
+  background-color: white;
+    z-index: 9;
+  }
+  
+  .ANav h5{
+    margin-bottom: 20px;
+  }
+
+  .ANav_Title{
+    margin-top: 54px;
+    font-size: 27px;
+    border-bottom: 2px solid #c9c9c9;
+    height: 111px;
+  }
+
+
+  .ANav_Info_List{
+    color: dimgray;
+    /* font-weight: bold; */
+    margin-left: 18px;
+    font-size: 12pt;
+  }
+  
+  .ANav_Info_List:hover {
+    color:black;
+    /* font-weight: 300; */
+    text-decoration: none;
+  }
+  
+  
+  .ANav_Info10{
+    /* height: 79px; */
+    border-bottom: 1px solid #c9c9c9;
+    margin-bottom: 17px;
+  }
+
+  .ANav_Info10>h5 {
+    margin-top: 24px;
+  }
+  
+  .ANav_Info9{
+    /* height: 79px; */
+    border-bottom: 1px solid #c9c9c9;
+    margin-bottom: 17px;
+  }
+  
+  .ANav_Info8{
+    /* height: 79px; */
+    border-bottom: 1px solid #c9c9c9;
+    margin-bottom: 17px;
+  }
+
+  .ANav_Info7{
+    /* height: 120px; */
+    border-bottom: 1px solid #c9c9c9;
+    margin-bottom: 17px;
+  }
+  
+
+  .Atphone{
+    width: 256px;
+    height: 179px;
+      position: relative;
+    left: -15%;
+  }
+
+  /* .AFace {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 13px;
+  } */

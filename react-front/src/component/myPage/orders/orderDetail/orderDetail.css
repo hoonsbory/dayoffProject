@@ -1,0 +1,66 @@
+.OrderGroupList{
+    width:90%;
+    margin:auto;
+    margin-bottom: 80px;
+}
+
+.RefundList{
+    width:90%;
+    margin:auto;
+    margin-bottom: 80px;
+}
+
+.OrderDetail{
+    width: 85%;
+    display: inline-block;
+    min-height: 1000px;
+    margin-left: 15%;
+    margin-top: 15%;
+}
+
+.OrderDetail table{
+    text-align: center;
+}
+
+.OrderDetail tr td{
+    vertical-align: middle;
+}
+
+.OrderDetail tr td button{
+    margin-top: 10px
+}
+
+.OrderDetail .tableTitle{
+    font-size: 15pt;
+    margin: 15px 30px;
+}
+
+.OrderDetail .orderDetailUser{
+    width:90%;
+    margin: 10px auto;
+    padding-right: 20px;
+    text-align: right;
+}
+
+.OrderDetail .orderDetailOrder{
+    width:90%;
+    margin: 10px auto;
+    padding-right: 20px;
+    text-align: right;
+}
+
+.OrderDetail .orderProductName{
+    display: inline-block;
+    max-width:80%;
+    padding: 0px 20px; 
+    word-break: break-all;
+    font-size:14pt;
+
+    
+}
+
+.OrderDetail .orderProduct{
+    text-align: left;
+    padding-left: 30px;
+        height:100px;
+}

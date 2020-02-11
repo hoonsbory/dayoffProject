@@ -1,0 +1,217 @@
+.category__item {
+  margin: 4px 36px;
+  cursor: pointer;
+}
+
+.dropmenu {
+  height: 80px;
+  float: left;
+  vertical-align: middle;
+  line-height: 40px;
+  padding: 12px 16px;
+  font-size: 15px;
+  display: inline-block;
+  margin-right: 5%;
+  margin-left: 16%;
+}
+  
+  .dropmenu ul{
+  background: #ffffff;;
+  height:50px;
+  list-style:none;
+  margin-top: 0px;
+  padding:0;
+  background-color: white;
+  }
+  
+  .dropmenu li{
+  float: left;;
+  padding:0px;
+  margin-right: 10px;
+  }
+  
+  .dropmenu li a{
+  color: lightslategray;
+  font-weight: bold;
+  display:inline-block;
+  line-height: 30px;
+  margin:0px;
+  padding:0px 25px;
+  text-align:center;
+  text-decoration:none;
+  margin-top: 10px;
+  height: 52px;
+  }
+  
+  .dropmenu li a:hover {
+  background: white(31,31,31);
+  color: black;
+  text-decoration:none;
+  }
+  
+  .dropmenu ul li:hover a{
+  background: white(31,31,31);
+  color: black;
+  text-decoration:none;
+  text-align: left;
+  height: 100%;
+  }
+  
+  .dropmenu li ul{
+  background: white;
+  display:none; 
+  height:100px;
+  position:absolute;
+  z-index:100;
+  }
+  
+  .dropmenu li:hover ul{
+  display:block;
+  width: 143px;
+  height: 55px;
+  }
+  
+  .dropmenu li li {
+  background: #ffffff;
+  display:block;
+  float:none;
+  margin:0px;
+  padding:0px;
+  width:100%;
+  height: 70px;
+}
+  
+  .dropmenu li:hover li a{
+  background:white;
+  font-weight: 500;
+  }
+  
+  .dropmenu li ul a{
+  display:block;
+  height:35px;
+  font-size:15px;
+  margin:0px;
+  padding: 10px 10px 0px 23px;
+  text-align:left;
+  }
+  
+  .dropmenu li ul a:hover, .dropmenu li ul li:hover a{
+  border:0px;
+  color:black;
+  text-decoration:none;
+  font-weight: 700;
+  }
+  
+  .dropmenu p{
+  clear:left;
+  }
+
+
+.Mcategory__item {
+  margin: 4px 36px;
+  cursor: pointer;
+}
+
+.Mdropmenu {
+  height: 80px;
+  float: left;
+  vertical-align: middle;
+  line-height: 40px;
+  padding: 12px 16px;
+  font-size: 15px;
+  display: inline-block;
+  margin-right: 5%;
+  margin-left: 22%;
+}
+  
+.Mdropmenu ul{
+  background: #ffffff;;
+  height:50px;
+  list-style:none;
+  margin-top: 0px;
+  padding:0;
+  background-color: white;
+  }
+  
+  .Mdropmenu li{
+  float: left;;
+  padding:0px;
+  margin-right: 10px;
+  }
+  
+  .Mdropmenu li a{
+  
+  color: lightslategray;
+  font-weight: bold;
+  display:inline-block;
+  line-height: 30px;
+  margin:0px;
+  padding:0px 25px;
+  text-align:center;
+  text-decoration:none;
+  margin-top: 10px;
+  height: 52px;
+  }
+  
+  .Mdropmenu li a:hover {
+  background: white(31,31,31);
+  color: black;
+  text-decoration:none;
+  }
+  
+  .Mdropmenu ul li:hover a{
+  background: white(31,31,31);
+  color: black;
+  text-decoration:none;
+  text-align: left;
+  height: 100%;
+  }
+  
+  .Mdropmenu li ul{
+  background: white;
+  display:none; 
+  height:100px;
+  position:absolute;
+  z-index:100;
+  }
+  
+  .Mdropmenu li:hover ul{
+  display:block;
+  width: 143px;
+  height: 55px;
+  }
+  
+  .Mdropmenu li li {
+  background: #ffffff;
+  display:block;
+  float:none;
+  margin:0px;
+  padding:0px;
+  width:100%;
+  height: 70px;
+}
+  
+  .Mdropmenu li:hover li a{
+  background:white;
+  font-weight: 500;
+  }
+  
+  .Mdropmenu li ul a{
+  display:block;
+  height:35px;
+  font-size:15px;
+  margin:0px;
+  padding: 10px 10px 0px 23px;
+  text-align:left;
+  }
+  
+  .Mdropmenu li ul a:hover, .Mdropmenu li ul li:hover a{
+  border:0px;
+  color:black;
+  text-decoration:none;
+  font-weight: 700;
+  }
+  
+  .Mdropmenu p{
+  clear:left;
+  }

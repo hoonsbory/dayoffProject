@@ -1,0 +1,69 @@
+.ProductNav {
+    min-height: 1120px;
+    height: 100%;
+    width: 180px;
+    display: inline-block;
+    border-right: 1px solid #c9c9c9;
+    padding: 8px;
+    float: left;
+    border-top: 1px solid #c9c9c9;
+    position: fixed;
+    background-color: white;
+	z-index: 9;
+
+  }
+  
+  .Product_NavTitle {
+    width: 160px;
+    margin-top: 30px;
+}
+
+.Product_NavTitle > h3{
+  font-size: 23px;
+}
+
+.NavInfo_Box {
+  margin-left: 18px;
+}
+
+  .Product_NavCategory {
+      border-top: 2px solid #c9c9c9;
+      height: 260px;
+      width: 150px;
+  }
+
+  .Product_NavCategory1{
+    border-top: 2px solid #c9c9c9;
+    height: 390px;
+    width: 150px;
+  }
+
+  .NavColor {
+    height: 300px;
+    width: 150px;
+    border-top: 2px solid #c9c9c9;
+  }
+
+  .Nava {
+    text-decoration: none !important;
+    color: black;
+    }
+
+  .Nava:hover {
+    /* background: #C9C9C9; */
+    color: #c9c9c9;
+  }
+
+  .NavCate {
+    height: 30px;
+    margin-bottom: 15px;
+  }
+
+  .colorImage {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 10%;
+  }

@@ -1,0 +1,124 @@
+.TotalTable{
+    width:85%;
+    display: inline-block;
+    min-height: 1000px;
+    margin-left: 11%;
+       margin-top: 11%;
+}
+
+.orderTable{
+    width:85%;
+    display: inline-block;
+    min-height: 1000px;
+}
+
+.UserTotalTable{
+    width:85%;
+    display: inline-block;
+    min-height: 1000px;
+    margin-left: 11%;
+    margin-top: 15%;
+}
+
+.pagenate1{
+    width: 50%;
+    margin : auto;
+    display: flex;
+    justify-content: center;
+    margin-top : 15px;
+}
+.n-table{
+    width : 100%;
+    text-align: center;
+    border-spacing: 2px;
+    -webkit-border-horizontal-spacing: 0px !important;
+    -webkit-border-vertical-spacing: 2px !important;
+}
+
+.n-table td {
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #E4E4E4;
+    text-align: center;
+    vertical-align: middle;
+}
+/* 
+.n-table tr :hover{
+    background-color: #F6F6F6;
+    opacity: 1;
+} */
+
+.infoDiv {
+    height: 100px;
+    min-height: 96px;
+    font-family: 'Gulim','Apple SD Gothic',Auto,sans-serif;
+    line-height: 1.5;
+    font-size: 14px;
+    text-align: left;
+    position: relative;
+    margin-right : 10px;
+    border-bottom: none !important;
+}
+
+.infoDiv ul{
+    padding-left : 0px;
+    width: 300px;
+    margin-top : 15px;
+}
+
+.infoDiv li{
+    width : 300px;
+}
+
+.infoDiv img {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.infoDiv a {
+    font-weight: 300;
+    display: block;
+    overflow: hidden;
+}
+
+.nameColor{
+    list-style: none;
+    position: relative;
+    left : 120px;
+}
+
+.n-table th{
+    border-bottom: 1px solid black;
+}
+.info1{
+    width : 300px;
+}
+.jaehoon.btn.btn-outline-dark{
+    position : relative !important;
+    display: inline;
+    left : 0;
+    padding-left : 15px;
+    padding-right : 15px;
+    padding-top : 5px;
+    padding-bottom : 5px;
+    
+}
+.prev{
+    position: fixed;
+    top : 50%;
+    left:10%;
+    
+}
+.next{
+    position: fixed;
+    top : 50%;
+    right:10%;
+    
+}
+.orderMain{
+    width: 90%;
+    margin: 40px auto;
+}

@@ -1,0 +1,108 @@
+.Nav {
+  height: 100%;
+  width: 15%;
+  border-right: 1px solid #c9c9c9;
+  padding: 10px;
+  float: left;
+  color: black;
+  border-top: 1px solid #c9c9c9;
+  position: fixed;
+  background-color: white;
+   z-index: 9;
+  }
+  
+  .Nav_Title{
+    margin-top: 54px;
+    font-size: 27px;
+    border-bottom: 2px solid #c9c9c9;
+    height: 111px;
+  }
+  
+  .Nav_Info1{
+    /* height: 155px; */
+    border-bottom: 1px solid #c9c9c9;
+    margin-bottom: 17px;
+    font-size: 14px;
+    margin-top: 30px;
+
+  }
+
+  .Nav_Info1 > h5{
+    margin-bottom: 20px;
+  }
+  
+  .Nav_Info2{
+    /* height: 134px; */
+    border-bottom: 1px solid #c9c9c9;
+    margin-bottom: 17px;
+    font-size: 14px;
+
+  }
+  .Nav_Info2 > h5{
+  margin-bottom: 20px;
+  }
+  
+  .Nav_Info3{
+    /* height: 147px; */
+    border-bottom: 1px solid #c9c9c9;
+    margin-bottom: 17px;
+    font-size: 14px;
+
+  }
+  
+  .Nav_Info4{
+    /* height: 130px; */
+    font-size: 14px;
+  
+  }
+  
+  .Nav_Info_List{
+    color: dimgray;
+    /* font-weight: bold; */
+    margin-left: 18px;
+    font-size: 12pt;
+  }
+  
+  .Nav_Info_List:hover {
+    color:black;
+    /* font-weight: 300; */
+    text-decoration: none;
+  }
+  
+  
+  .Nav_Info10{
+    height: 79px;
+    border-bottom: 1px solid #c9c9c9;
+    margin-bottom: 17px;
+  }
+  
+  .Nav_Info9{
+    height: 79px;
+    border-bottom: 1px solid #c9c9c9;
+    margin-bottom: 17px;
+  }
+  
+  .Nav_Info8{
+    height: 79px;
+    border-bottom: 1px solid #c9c9c9;
+    margin-bottom: 17px;
+  }
+  
+  .Nav_Info7{
+    height: 110px;
+    border-bottom: 1px solid #c9c9c9;
+    margin-bottom: 17px;
+  }
+
+  .tphone{
+    width: 210px;
+    height: 160px;
+    position: relative;
+    left: -15%;
+  }
+
+  /* .Face {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 13px;
+  } */

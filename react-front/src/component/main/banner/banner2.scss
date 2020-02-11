@@ -1,0 +1,80 @@
+@import 'https://fonts.googleapis.com/css?family=PT+Sans:400,700';
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: 'PT Sans';
+    font-size: 18px;
+}
+.tiles {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    width : 100%;
+    display: inline-block;
+}
+.tile {
+    display: inline-block;
+    margin: 15px;
+    width : 100%;
+    cursor: pointer;
+    overflow: hidden;
+    height: 349px;
+    img {
+         width: 100%;
+        transition: transform 500ms ease;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+.tilejh {
+    display: inline-block;
+    margin: 15px;
+    margin-right: 0px;
+    cursor: pointer;
+    // overflow: hidden;
+    width: 216px;
+    height: 349px;
+    
+}
+.tileImg{
+    width: 100%;
+    height : 276px;
+    transition: transform 500ms ease;
+    &:hover {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+}
+.tile img {
+    width: 9%;
+}
+
+.Banners{
+    width : 100%;
+    margin-left: 6%;
+}
+
+.TotalTilejh{
+    display: inline-block;
+}
+.TotalTile{
+    display: inline-block;
+    width : 21%;
+    margin-right: 30px;
+
+}
+.titititi{
+    position: absolute;
+    right : 1%;
+}
+.jhBtn{
+    position: absolute;
+    right : 0%;
+    top : 1%;
+    width: 20px;
+}

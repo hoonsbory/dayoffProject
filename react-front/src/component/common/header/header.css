@@ -1,0 +1,246 @@
+.Header {
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  padding: 0px;
+  display: inline-block;
+  position: relative;
+}
+
+.logo {
+  height: 50px;
+  width: 222px;
+  margin: 14px 70px;
+  float: left;
+  display: inline-block;
+  margin-left: 45%;
+  margin-bottom: 4px;
+  margin-top: 76px;
+}
+
+.logo1 {
+  height: 50px;
+  width: 222px;
+  float: left;
+  display: inline-block;
+  margin-left: 45%;
+}
+
+
+.cartlogo {
+  height: 14px;
+  width: 14px;
+}
+
+.HeaderSearch {
+  width: 250px;
+  display: inline-block;
+}
+
+.ContentsHeader_aa {
+  font-size: 40px;
+  color: red;
+  margin-right: 20px;
+}
+
+.Header_Top {
+    width: 100%;
+    height: 50px;
+    font-size: 15px;
+    margin-top: 40px;
+}
+
+.imgHeader {
+}
+
+.Toplogin_Info > a{
+  text-decoration:none;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.TotalHeader{
+  width: 100%;
+    position: fixed;
+    left: 5%;
+    background: white;
+    z-index: 8;
+    border-bottom: 1px solid #eaeaea;
+       top: 0;
+}
+
+
+.Toplogin_Info {
+  z-index: 999;
+  right : 0%;
+    height: 40px;
+    margin-top: 15px;
+    font-size: 15px;
+    display: inline-block;
+    list-style:none;
+    font-weight: 700;
+    position: fixed;    
+}
+  
+  .Toplogin_Info li{
+  float: left;;
+  padding:0px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-weight: 400;
+  }
+
+
+  .Toplogin_Info li a{
+    color: black;
+    text-decoration: none;
+  }
+
+  .Toplogin_Info1 {
+    z-index: 999;
+    right : 0%;
+    height: 40px;
+    margin-top: 15px;
+    font-size: 15px;
+    display: inline-block;
+    list-style:none;
+    font-weight: 700;
+    position: fixed;    
+  }
+    
+    .Toplogin_Info1 li{
+    float: left;;
+    padding:0px;
+    margin-right: 20px;
+    cursor: pointer;
+    font-weight: 400;
+    }
+  
+  
+    .Toplogin_Info1 li a{
+      color: black;
+      text-decoration: none;
+    }
+  
+
+
+  .MHeader {
+    width: 100%;
+    height: 95px;
+    background-color: white;
+    padding: 0px;
+    display: inline-block;
+    position: relative;  
+}
+  
+  .Mlogo {
+    height: 50px;
+    width: 222px;
+    margin: 14px 70px;
+    float: left;
+    display: inline-block;
+    margin-left: 45%;
+    margin-top: 52px;
+}
+  
+  .Mcartlogo {
+    height: 14px;
+    width: 14px;
+  }
+  
+  .MHeaderSearch {
+    width: 250px;
+    display: inline-block;
+  }
+  
+  .MContentsHeader_aa {
+    font-size: 40px;
+    color: red;
+    margin-right: 20px;
+  }
+  
+  .MHeader_Top {
+      width: 100%;
+      height: 100px;
+      font-size: 15px;
+      margin-right: 40px;
+    }
+  
+  .MimgHeader {
+    height: 600px;
+    background-image: url('/images/MainImg.jpg');
+    background-size: 100%;
+  }
+  
+  .MToplogin_Info > a{
+    text-decoration:none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  
+  .MTotalHeader{
+    width: 100%;
+    position: fixed;
+    z-index: 9;
+    background: white;
+    border-bottom: 1px solid #eaeaea;
+       top: 0;
+  }
+  
+  
+  .MToplogin_Info {
+    z-index: 999;
+    right : 0%;
+    height: 40px;
+    margin-top: 15px;
+    font-size: 15px;
+    display: inline-block;
+    list-style:none;
+    font-weight: 700;
+    position: fixed;    
+
+  }
+    
+    .MToplogin_Info li{
+    float: left;;
+    padding:0px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-weight: 400;
+    }
+  
+  
+    .MToplogin_Info li a{
+      color: black;
+      text-decoration: none;
+    }
+
+    .MToplogin_Info1 {
+      z-index: 999;
+      right : 0%;
+      height: 40px;
+      margin-top: 15px;
+      font-size: 15px;
+      display: inline-block;
+      list-style:none;
+      font-weight: 700;
+      position: fixed;    
+    }
+      
+      .MToplogin_Info1 li{
+      float: left;;
+      padding:0px;
+      margin-right: 20px;
+      cursor: pointer;
+      font-weight: 400;
+      }
+    
+    
+      .MToplogin_Info1 li a{
+        color: black;
+        text-decoration: none;
+      }

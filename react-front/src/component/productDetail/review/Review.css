@@ -1,0 +1,23 @@
+
+.stars ul{
+  width: 60%;
+  margin: auto !important;
+}
+
+  .stars ul li{
+    margin: auto;
+    text-align: center;
+  }
+ 
+    .content{
+      width: 100%;
+      min-height: 100px;
+      border-top:1px dotted black;
+      border-bottom:1px solid black;
+      vertical-align: middle;
+      text-align: left;
+     padding-top:20px;
+     padding-left:20px;
+     white-space: pre-line;
+    
+  }

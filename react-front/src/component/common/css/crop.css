@@ -1,0 +1,113 @@
+.pageTitle2{
+    width: 90%;
+    margin: 40px auto;
+    margin-bottom: 0px !important;
+}
+
+.pageTitle2 div{
+    font-size: 20pt;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+.drop-n-crop {
+    position: relative;
+    float: left;
+    width : 400px;
+    left : 15%;
+    display: inline-block !important;
+}
+/* .cropper-container {
+    width : 700px !important;
+    left : 20% !important;
+
+}
+.cropper-canvas, .cropper-crop-box{
+    left : 20% !important;
+} */
+
+.cropper-container {
+}
+.cropper-bg{
+    background-image: none !important;
+}
+.cropper-modal{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAAA3NCS…Jld29ya3MgQ1M26LyyjAAAABFJREFUCJlj+M/AgBVhF/0PAH6/D/HkDxOGAAAAAElFTkSuQmCC) !important;
+}
+.cropper-drag-box{
+    
+
+
+
+}
+#preview{
+    position: relative;
+    left:5%;
+    width: 400px;
+    float: left;
+}
+.previewDiv{
+    position: relative;
+    display: inline-block;
+    width: 90%;
+    height: 150px;
+    left : 5%;
+}
+.buttonDiv{
+    position: relative;
+    width : 400px;
+    float: left;
+    margin-top: 20px;
+    height: 150px;
+}
+.buttonVision{
+    position: relative;
+    display: block;
+    width: 300px;
+    height: 40px;
+}
+.info{
+    position: relative;
+    float : left;
+    left : 20%;
+    width: 400px;
+    height: 380px;
+    border-left : 1px solid black;
+    padding-left : 40px;
+    
+}
+.listDiv{
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.imgbox{
+    position: relative;
+    left: 0;
+}
+.listDiv{
+    position: relative;
+    top : 0;
+    width : 200px;
+}
+.listDiv p{
+    min-height: 72px;
+    max-height: 72px;
+    overflow: hidden;
+}
+
+.visionbody{
+        display: inline-block;
+    position: relative;
+    width: 1000px !important;
+    left: 17%;
+    margin-bottom: 54px;
+    margin-top: 100px;
+}
+.visinoList{
+}
+.imgbox h1,h2{
+    left: 0;
+    display: block;
+}

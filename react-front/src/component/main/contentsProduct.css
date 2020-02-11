@@ -1,0 +1,23 @@
+.PContentItem .productMenu{
+    position: relative;
+    text-align: right;
+    margin: auto;
+    z-index: 7;
+}
+
+.PContentItem .productMenu .hiddenProductBtns{
+    position: absolute;
+    right: 0;
+    background-color: #f1f3f5;
+}
+
+.PContentItem .listbtn{
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    padding:10px;
+}
+
+.PContentItem .listbtn:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+    

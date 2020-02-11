@@ -1,0 +1,28 @@
+.page-item{
+    cursor: pointer;
+}
+
+.UserList{
+    width: 90%;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.UserList .table{
+    margin-bottom: 50px;
+}
+
+.UserList .pagination{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.UserListWrapper{
+    width:85%;
+    display: inline-block;
+    min-height: 1000px;
+    margin-left: 11%;
+       margin-top: 11%;
+}
