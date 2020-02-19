@@ -7,7 +7,6 @@ class SignUpForm extends Component {
 
 
     render() {
-        
         const { name, phone, birth, sex, height, weight } = this.props.users;
         const { error, onChange, onClick, button } = this.props;
         return (

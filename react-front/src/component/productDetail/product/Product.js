@@ -6,7 +6,7 @@ class Product extends Component {
     render() {
         return (
             <div>
-                {sessionStorage.getItem("userRole")==="admin"?<ProductInfoAdmin productId={this.props.match.params.productId}></ProductInfoAdmin>:<ProductInfo productId={this.props.match.params.productId}></ProductInfo>}
+                {localStorage.getItem("userRole")==="admin"?<ProductInfoAdmin productId={this.props.match.params.productId}></ProductInfoAdmin>:<ProductInfo productId={this.props.match.params.productId}></ProductInfo>}
                 
             </div>
         );

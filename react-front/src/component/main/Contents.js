@@ -105,18 +105,18 @@ export default class Content extends Component {
     this.setState({
       keyword: this.props.keyword,
       category: this.props.category
-    }, sessionStorage.getItem("userRole") === "admin" ? this.SearchAdminProduct : this.SearchProduct)
+    }, localStorage.getItem("userRole") === "admin" ? this.SearchAdminProduct : this.SearchProduct)
   }
 
   componentWillReceiveProps(nextProps) {
     if (this.props.keyword !== nextProps.keyword) {
       
-        this.setState({ keyword: nextProps.keyword }, sessionStorage.getItem("userRole") === "admin" ? this.SearchAdminProduct : this.SearchProduct);
+        this.setState({ keyword: nextProps.keyword }, localStorage.getItem("userRole") === "admin" ? this.SearchAdminProduct : this.SearchProduct);
       
       window.scrollTo(0, 0);
     } else if (nextProps.category !== this.props.category) {
       
-        this.setState({ category: nextProps.category }, sessionStorage.getItem("userRole") === "admin" ? this.SearchAdminProduct : this.SearchProduct);
+        this.setState({ category: nextProps.category }, localStorage.getItem("userRole") === "admin" ? this.SearchAdminProduct : this.SearchProduct);
       
       window.scrollTo(0, 0);
     }
@@ -192,7 +192,7 @@ export default class Content extends Component {
 
   render() {
     const errorMessage = this.state.errorMessage;
-    if (sessionStorage.getItem("userRole") !== "admin") {
+    if (localStorage.getItem("userRole") !== "admin") {
       return (
         <div className="PContents">
           <div className='PDropButton'>

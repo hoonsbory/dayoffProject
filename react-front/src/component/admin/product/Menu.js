@@ -5,7 +5,7 @@ class Menu extends Component {
     
 
     render() {
-        const login=sessionStorage.getItem("userId")?'로그아웃':'로그인';
+        const login=localStorage.getItem("userId")?'로그아웃':'로그인';
         return (
             <div>
 

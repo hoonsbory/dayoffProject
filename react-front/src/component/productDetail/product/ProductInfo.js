@@ -71,7 +71,7 @@ class ProductInfo extends Component {
   }
 
   addToCart = async () => {
-    const userId = sessionStorage.getItem("userId");
+    const userId = localStorage.getItem("userId");
     if (userId !== null) {
       const cart = {
         quantity: this.state.cart.quantity,
@@ -79,7 +79,7 @@ class ProductInfo extends Component {
         color: this.state.color,
         size: this.state.size,
         product: { id: this.state.product.id },
-        users: { id: sessionStorage.getItem("userId") }
+        users: { id: localStorage.getItem("userId") }
       };
       if (cart.quantity === 0 || cart.color === null || cart.size === null) {
         alert("상품 선택을 완료해주세요");
@@ -199,7 +199,7 @@ class ProductInfo extends Component {
     });
   };
   handleOrder = e => {
-    if (!sessionStorage.getItem("userId")) {
+    if (!localStorage.getItem("userId")) {
       e.preventDefault();
       document.getElementById("loginFrame").style.visibility = "visible";
     }
@@ -351,7 +351,7 @@ class ProductInfo extends Component {
                             color: this.state.color,
                             size: this.state.size,
                             productId: this.state.product.id,
-                            userId: sessionStorage.getItem("userId"),
+                            userId: localStorage.getItem("userId"),
                             productThumbnailName:
                               this.state.product.productImage[0] &&
                               this.state.product.productImage[0].name

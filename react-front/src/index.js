@@ -1,8 +1,14 @@
+import 'core-js/stable';
+import 'regenerator-runtime/runtime';
+import 'react-app-polyfill/ie11';
+import 'react-app-polyfill/stable';
+import 'url-search-params-polyfill';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import Root from './Root';
+
 
 ReactDOM.render(<Root />, document.getElementById('root'));
 

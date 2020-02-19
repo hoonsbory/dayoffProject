@@ -21,7 +21,10 @@ class visionList extends Component {
         return (
          <div className="visionsList"> 
 	{this.props.empty ? <h2>찾으시는 <strong>{this.props.empty}</strong>은(는) 저희 쇼핑몰에는 없습니다. 대신 이런 상품은 어떨까요?</h2> : ""}
+	{this.props.bestList?  <div className="imgbox">
           <Display kind="vision" List={this.props.bestList}></Display>
+	</div> : ""}
+
            {this.props.list ?  <div className="imgbox">
             <h1>상품검색 결과</h1>
             <hr></hr>

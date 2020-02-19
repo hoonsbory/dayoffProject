@@ -86,7 +86,7 @@ class ListCartComponent extends Component {
    
     reloadCartList() {
 
-        ApiService_.fetchUserLevel(sessionStorage.getItem("userId"))
+        ApiService_.fetchUserLevel(localStorage.getItem("userId"))
             .then((res) => {
                // console.log(res.data)
                 
@@ -186,7 +186,7 @@ class ListCartComponent extends Component {
         let deliever_ = {name: this.state.name, location: loc, postalCode: this.state.postalCode, phone: this.state.phone};
         
 
-      ApiService_.kakaopay(this.state.carts, deliever_,this.state.selectValue,this.state.checked,this.state.store,this.state.service,this.state.discount,this.state.transpay,this.state.emoney,this.state.useEmoney,sessionStorage.getItem("userId")).then((res)=>{
+      ApiService_.kakaopay(this.state.carts, deliever_,this.state.selectValue,this.state.checked,this.state.store,this.state.service,this.state.discount,this.state.transpay,this.state.emoney,this.state.useEmoney,localStorage.getItem("userId")).then((res)=>{
           this.props.history.push(res.data)
           window.location.assign(res.data);
       });

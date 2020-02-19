@@ -6,9 +6,9 @@ class LoginSuccess extends Component {
     getUser = async () => {
         const response = await axios.get("/getUser");
         const users=response.data;
-        sessionStorage.setItem("userId", users.id);
-        sessionStorage.setItem("userRole", users.role);
-        sessionStorage.setItem("userName", users.name);
+        localStorage.setItem("userId", users.id);
+        localStorage.setItem("userRole", users.role);
+        localStorage.setItem("userName", users.name);
         const cart=JSON.parse(localStorage.getItem("cart1"));
         if(cart&&users.role==="user"){
             const finalCart=cart.map(c=>c={...c,users:{id:users.id}});

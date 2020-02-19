@@ -266,7 +266,7 @@ public class UsersController {
 		System.out.println("로그인필요");
 	}
 
-	@RequestMapping(value = "/logout", method = RequestMethod.GET)
+	@RequestMapping(value = "/logoutaa", method = RequestMethod.GET)
 	public void logout(final HttpServletRequest request, final HttpServletResponse response) throws Exception {
 		System.out.println("로그아웃");
 		final Authentication auth = SecurityContextHolder.getContext().getAuthentication();

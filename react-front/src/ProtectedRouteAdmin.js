@@ -9,9 +9,9 @@ export const ProtectedRouteAdmin = ({
     <Route
       {...rest}
       render={props => {
-        if (sessionStorage.getItem("userId")&&sessionStorage.getItem("userRole")==="admin") {
+        if (localStorage.getItem("userId")&&localStorage.getItem("userRole")==="admin") {
           return <Component {...props} />;
-        }else if(sessionStorage.getItem("userId")&&sessionStorage.getItem("userRole")==="user"){
+        }else if(localStorage.getItem("userId")&&localStorage.getItem("userRole")==="user"){
           return (
             <Redirect
               to={{

@@ -39,7 +39,7 @@ import './NewPost.css';
             rating:this.state.rating,
             productId: this.state.productId,
             users : {
-            id : sessionStorage.getItem("userId")
+            id : localStorage.getItem("userId")
             }
         }
 

@@ -14,11 +14,11 @@ import './CartView.css';
    };
 
    handleCartView = () => {
-     const userId = sessionStorage.getItem("userId");
+     const userId = localStorage.getItem("userId");
      if (userId !== null) {
        axios
          .get("/cartList", {
-           params: { userId: sessionStorage.getItem("userId") }
+           params: { userId: localStorage.getItem("userId") }
          })
          .then(res => {
            this.setState({
@@ -40,7 +40,7 @@ import './CartView.css';
      }
    };
    handleDeleteItem = async () => {
-     const userId = sessionStorage.getItem("userId");
+     const userId = localStorage.getItem("userId");
      const cartView = this.state.cartView;
      const checkedItem = this.state.checkedItem;
      const cart1 = cartView.filter(c => !checkedItem.includes(c));
@@ -113,7 +113,7 @@ import './CartView.css';
      this.handleCartView();
    }
    handleOrder = e => {
-     if (!sessionStorage.getItem("userId")) {
+     if (!localStorage.getItem("userId")) {
        e.preventDefault();
        document.getElementById("loginFrame").style.visibility = "visible";
      }

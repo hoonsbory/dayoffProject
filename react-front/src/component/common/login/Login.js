@@ -10,7 +10,7 @@ class Login extends Component {
 
 
     componentDidMount(){
-        if(sessionStorage.getItem("userId")){
+        if(localStorage.getItem("userId")){
             this.setState({
                 login:true
             })
@@ -44,15 +44,15 @@ class Login extends Component {
     }
 
     logout=async ()=>{
-        const res = await axios.get("/logout")
-        sessionStorage.removeItem("userId");
-        sessionStorage.removeItem("userRole");
-        sessionStorage.removeItem("userName");
+        const res = await axios.get("/logoutaa")
+        localStorage.removeItem("userId");
+        localStorage.removeItem("userRole");
+        localStorage.removeItem("userName");
 
         this.setState({
             login:false
         })
-
+	console.log(res)
         if(res.data===1){
             this.props.history.push("/")
         }
@@ -63,7 +63,7 @@ class Login extends Component {
     }
 
     render() {
-        const login=sessionStorage.getItem("userId")?'로그아웃':'로그인';
+        const login=localStorage.getItem("userId")?'로그아웃':'로그인';
         return (
             <span className='logSpan'>
                     <span onClick={this.handleLogin}>{login}</span>

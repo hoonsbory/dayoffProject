@@ -74,8 +74,8 @@ class SignUp extends Component {
                         users: null,
                         signUp: true
                     });
-                    sessionStorage.setItem("userId", users.id);
-                    sessionStorage.setItem("userRole", users.role);
+                    localStorage.setItem("userId", users.id);
+                    localStorage.setItem("userRole", users.role);
 
                 });
 

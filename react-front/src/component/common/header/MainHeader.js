@@ -14,7 +14,7 @@ export default class MainHeader extends Component {
     
     componentDidMount() {
      window.scrollTo(0, 0);
-      if(sessionStorage.getItem("userId")){
+      if(localStorage.getItem("userId")){
         this.setState({
           login:true
         })
@@ -28,9 +28,9 @@ export default class MainHeader extends Component {
 
     logout= async ()=>{
       const res = await axios.get("logout")
-      sessionStorage.removeItem("userId")
-      sessionStorage.removeItem("userRole")
-      sessionStorage.removeItem("userName")
+      localStorage.removeItem("userId")
+      localStorage.removeItem("userRole")
+      localStorage.removeItem("userName")
 
       this.setState({
         login:false
@@ -61,9 +61,9 @@ export default class MainHeader extends Component {
       return (
           <div className='MTotalHeader'>
           <ul className='MToplogin_Info'>
-          <li>{sessionStorage.getItem("userName")}</li>
+          <li>{localStorage.getItem("userName")}</li>
           <li><Link><Login history={this.props.history}></Login></Link></li>  &nbsp;&nbsp;&nbsp;
-          <li>{sessionStorage.getItem("userRole")==="admin"?<Link to='/admin/orders'>ADMIN</Link>:<Link to='/mypage/myorders'>마이페이지</Link>}</li>
+          <li>{localStorage.getItem("userRole")==="admin"?<Link to='/admin/orders'>ADMIN</Link>:<Link to='/mypage/myorders'>마이페이지</Link>}</li>
           <li><Link to='/cart'> <img className='Mcartlogo' alt="cart" src='/images/cartlogo.png' /> 장바구니</Link></li>
               <li><HeaderSearch /></li>
           </ul>

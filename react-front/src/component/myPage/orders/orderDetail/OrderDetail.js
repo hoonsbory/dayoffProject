@@ -54,8 +54,8 @@ class OrderDetail extends Component {
 
     
     render() {
-        const isAdmin = sessionStorage.getItem("userRole") === "admin";
-        const isMine = parseInt(sessionStorage.getItem("userId")) === this.state.userId;
+        const isAdmin = localStorage.getItem("userRole") === "admin";
+        const isMine = parseInt(localStorage.getItem("userId")) === this.state.userId;
         // const isMine=true;
         const refundData = this.state.data.filter(d => d.refundRequestDate);
 

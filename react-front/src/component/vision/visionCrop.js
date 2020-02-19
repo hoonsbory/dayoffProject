@@ -45,7 +45,6 @@ class visionCrop extends Component {
       onChange = value => {
         this.setState(value);
         document.getElementById("searchbutton").disabled = false;
-        
       };
 
 

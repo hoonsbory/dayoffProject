@@ -49,7 +49,7 @@ export default class orders extends Component {
   };
   async orderList(userId,page){
     const params = new URLSearchParams();
-    params.append("userId", sessionStorage.getItem("userId"))
+    params.append("userId", localStorage.getItem("userId"))
     await Axios({
       method : "post",
       data : params,
@@ -72,12 +72,12 @@ change(){
 
 componentDidMount(){
   window.scrollTo(0, 0);
-  this.orderList(sessionStorage.getItem("userId"),this.state.page)
+  this.orderList(localStorage.getItem("userId"),this.state.page)
 }
 
 shouldComponentUpdate(nextProps,nextState){
   if(nextState.change!==this.state.change){
-    this.orderList(sessionStorage.getItem("userId"),this.state.page)
+    this.orderList(localStorage.getItem("userId"),this.state.page)
   }
   return true;
 }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './banner2.scss';
 import Axios from 'axios';
-
+import { Link } from 'react-router-dom';
 
 
 class banner2 extends Component {
@@ -13,6 +13,7 @@ class banner2 extends Component {
     test1() {
         Axios.get('/TopBannerList').then(res=>{
           const product =res.data;
+	console.log(res)
           this.setState({ product });
         });
     }
@@ -22,6 +23,7 @@ class banner2 extends Component {
     }
 
     render() {
+	console.log(this.state.product)
         return (
                 <div className="tileDiv">
             <div className="MContentsHeader_box">
@@ -87,7 +89,7 @@ export class Tiles extends React.Component {
         return (
             <div className="tiles">
                 {this.props.list.map(product => 
-                 <Tile history={this.props.history} changeFunc={this.stateChange} changeBtn={changeBtn} change={change} product={product} key={product.id}/>)}
+                 <Tile history={this.props.history} changeFunc={this.stateChange} changeBtn={changeBtn} change={change} product={product} key={product.productId}/>)}
             </div>
         );
     }
@@ -133,8 +135,8 @@ class Tile extends React.Component {
                         open: true
                     });
                 } else {
-                    let id = this.props.product.id
-                    document.getElementById(this.props.product.id).onclick = function(){
+                    let id = this.props.product.productId
+                    document.getElementById(this.props.product.productId).onclick = function(){
                         window.location.href = "/product/"+ id;
                     }
                     this.setState({
@@ -151,7 +153,7 @@ class Tile extends React.Component {
             }    
     
             componentDidMount(){
-                let id = this.props.product.id
+                let id = this.props.product.productId
                 document.getElementById(id).onclick = function(){
                     window.location.href = "/product/"+ id;
                 }
@@ -162,8 +164,8 @@ class Tile extends React.Component {
         let tileStyle = {};
         // When tile clicked
         if (this.state.open) {
-            let id = this.props.product.id
-            document.getElementById(this.props.product.id).onclick = function(){
+            let id = this.props.product.productId
+            document.getElementById(this.props.product.productId).onclick = function(){
                 document.getElementById("tileBtn"+id).click();
             }
             tileStyle = {
@@ -180,7 +182,7 @@ class Tile extends React.Component {
             tileStyle = {
                 zIndex : '499',
                 width: '100%',
-                height: '100%',
+                height: '80%',
                 
             };
         }
@@ -197,11 +199,16 @@ class Tile extends React.Component {
                         onMouseLeave={this._mouseLeave}
                         // src={"https://storage.googleapis.com/bit-jaehoon/"+product.productThumbnailName}
                         src={"https://storage.googleapis.com/bit-jaehoon/"+ this.props.product.productThumbnailName}
-                        id={this.props.product.id}
+                        id={this.props.product.productId}
                         style={tileStyle}
                     />
+		<img alt="change" id={"tileBtn"+this.props.product.productId} style={this.props.changeBtn} onClick={this._clickHandler} className='titititi' src='/images/enlargement.png'></img>
+                    <Link to={"/product/"+this.props.product.productId}>
+                <p className="title">{this.props.product.productName}</p>
+                <p className="price">{this.props.product.price}원</p>
+                </Link>
                     {/* </Link> */}
-                    <img alt="change" id={"tileBtn"+this.props.product.id} style={this.props.changeBtn} onClick={this._clickHandler} className='titititi' src='/images/enlargement.png'></img>
+                    
                 </div>
             </div>
         )

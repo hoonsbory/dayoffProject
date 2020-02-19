@@ -15,7 +15,7 @@ class UserGrade extends Component {
     }
 
     async getGrade() {
-        const response = await axios.get("/getGrade?userId=" + sessionStorage.getItem("userId"));
+        const response = await axios.get("/getGrade?userId=" + localStorage.getItem("userId"));
         const grades = response.data.grades;
         const currGrade = response.data.userGrade;
         const nextGrade = grades.find((g) => g.rate > currGrade.rate);

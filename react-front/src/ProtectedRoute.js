@@ -9,7 +9,7 @@ export const ProtectedRoute = ({
     <Route
       {...rest}
       render={props => {
-        if (sessionStorage.getItem("userId")) {
+        if (localStorage.getItem("userId")) {
           return <Component {...props} />;
         } else {
           return (

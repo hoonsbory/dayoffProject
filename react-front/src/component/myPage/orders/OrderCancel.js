@@ -65,7 +65,7 @@ class OrderCancel extends Component {
     render() {
         return (
             <div>
-    <Button className="jaehoon" variant="outline-dark" onClick={this.f3.bind(this)}>{sessionStorage.getItem("userRole")==="admin" ? "환불승인":"주문취소"}</Button>
+    <Button className="jaehoon" variant="outline-dark" onClick={this.f3.bind(this)}>{localStorage.getItem("userRole")==="admin" ? "환불승인":"주문취소"}</Button>
             </div>
         );
     }

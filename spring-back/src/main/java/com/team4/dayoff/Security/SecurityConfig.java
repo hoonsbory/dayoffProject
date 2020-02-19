@@ -57,17 +57,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         .accessDeniedPage("/deny")
         .and()
         .logout()
-        .logoutUrl("/logout");
+        .logoutUrl("/logoutaa");
         // .logoutSuccessUrl("/login");
     }
 
 
-@Bean
-public AuthorizationRequestRepository<OAuth2AuthorizationRequest> 
-  authorizationRequestRepository() {
-  
-    return new HttpSessionOAuth2AuthorizationRequestRepository();
-}
 
 @Bean
 public OAuth2AccessTokenResponseClient<OAuth2AuthorizationCodeGrantRequest> 

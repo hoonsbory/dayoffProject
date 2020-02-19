@@ -78,3 +78,25 @@ body {
     top : 1%;
     width: 20px;
 }
+
+.tiles .title {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width : 295px !important;
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom : 0 !important;
+    color : black;
+    
+  }
+.tiles .price{
+    font-size : 15px;
+    font-weight: 500;
+    color : black
+  
+  }
+.tiles a{
+    text-decoration-line: none;
+    text-align: center;
+}

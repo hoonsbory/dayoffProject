@@ -52,11 +52,11 @@ class App extends Component {
           <Route path="/productList/search" component={ProductListPage} /> 
           <Route path="/productList/category/:category" component={ProductListPage} /> 
           </Switch>
-          <ProtectedRouteAdmin path="/admin" component={AdminNav} />
+          <Route path="/admin" component={AdminNav} />
           <Switch>
           <ProtectedRouteAdmin path="/admin/addProduct" component={ProductAdd} />
           <ProtectedRouteAdmin path="/admin/updateProduct/:productId" component={ProductUpdate} />
-          <ProtectedRouteAdmin path="/admin/userList/:userId" component={UserList} />
+	  <ProtectedRouteAdmin path="/admin/userList/:userId" component={UserList} />
           <ProtectedRouteAdmin path="/admin/userList" component={UserList} />
           <ProtectedRouteAdmin path="/admin/usersAnalysis" component={UserAnalysis} />
           <ProtectedRouteAdmin path="/admin/ordersAnalysis" component={OrderAnalysis} />
