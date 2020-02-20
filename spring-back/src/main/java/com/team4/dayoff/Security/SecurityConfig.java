@@ -43,7 +43,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         .antMatchers("/updateUserProcess","/addReview","/changeCode","/review","/cancelOrder",
         "/refundRequestProcess","/refundRequest","/getGrade","/orderDetail/{groupId}",
         "/myOrderLIst","/order","/payInfoList{userId}","/kakaoPay","/kakaoPaySuccess",
-        "/confirm","/orderCount","/getUser","/signUp","/signUpProcess","/withdraw","/withdrawProcess")
+        "/confirm","/orderCount","/signUp","/signUpProcess","/withdraw","/withdrawProcess")
         .hasRole("REALUSER")
         .anyRequest()
         .permitAll()
