@@ -7,6 +7,7 @@ import java.util.Map;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.google.api.services.people.v1.model.Person;
 import com.google.gson.Gson;
@@ -48,6 +49,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.util.WebUtils;
 
 @CrossOrigin("*")
 @RestController
@@ -218,17 +220,32 @@ public class UsersController {
 		System.out.println(savedUsers);
 
 	}
+	
 
 	@GetMapping("/loginSuccess")
 	public ModelAndView getLoginInfo(HttpServletResponse response,final Model model, final OAuth2AuthenticationToken authenticationToken,
-			final HttpServletRequest request) {
+			 HttpServletRequest request) {
 		// String referer=request.getHeader("referer"); // 이전 페이지 주소
 		final String socialType = authenticationToken.getAuthorizedClientRegistrationId();
 		System.out.println(socialType); // 소셜 구별용
 		
 		
-		
+		HttpSession session = request.getSession();
 
+		System.out.println("session id = "+session.getId());
+		System.out.println(session.getAttribute("LOGIN"));
+	
+		Cookie cookie = WebUtils.getCookie(request, "JSESSIONID");
+		cookie.setMaxAge(86400);
+		
+		Cookie cookie2 = new Cookie("userinfo", "userinfo");
+		cookie2.setMaxAge(86400);
+		cookie.setSecure(true);
+		cookie.setHttpOnly(true);
+
+		response.addCookie(cookie);
+		response.addCookie(cookie2);
+		System.out.println(session.getMaxInactiveInterval());
 
 		final String socialId = authenticationToken.getAuthorizedClientRegistrationId() + "_"
 				+ authenticationToken.getName();
@@ -306,7 +323,8 @@ public class UsersController {
 	// }
 
 	@RequestMapping("/aaa")
-	public void aa() {
-
+	public void aa(HttpServletRequest request) {
+		HttpSession session = request.getSession();
+		System.out.println(session.getId());
 	}
 }

@@ -5,6 +5,7 @@ import Category from './category/Category';
 import Login from '../login/Login'
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import cookie from 'react-cookies';
 
 export default class Header extends Component {
   state = {
@@ -12,7 +13,7 @@ export default class Header extends Component {
     }
   
     componentDidMount() {
-      if(localStorage.getItem("userId")){
+      if(cookie.load("userinfo")){
         this.setState({
           login:true
         })
@@ -63,7 +64,7 @@ export default class Header extends Component {
           <ul className='Toplogin_Info'>
           <li>{localStorage.getItem("userName")}</li>
           <li><Link><Login history={this.props.history}></Login></Link></li>  &nbsp;&nbsp;&nbsp;
-          <li>{localStorage.getItem("userRole")==="admin"?<Link to='/admin/orders'>ADMIN</Link>:<Link to='/mypage/myorders'>마이페이지</Link>}</li>
+	  <li>{cookie.load("userinfo") ? (localStorage.getItem("userRole")==="admin" ? <Link to='/admin/orders'>ADMIN</Link>:<Link to='/mypage/myorders'>마이페이지</Link>) : ""}</li>          
           <li><Link to='/cart'> <img className='cartlogo' alt="cart" src='/images/cartlogo.png' /> 장바구니</Link></li>
           <li><HeaderSearch></HeaderSearch></li>
 

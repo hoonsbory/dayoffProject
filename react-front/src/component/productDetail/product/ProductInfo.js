@@ -10,6 +10,7 @@ import ProductTogetherBuy from "./productTogetherBuy";
 import Reviews from "../review/Reviews";
 import CenterMode from "./CenterMode";
 import SlideToggle from 'react-slide-toggle';
+import cookie from 'react-cookies';
 
 
 
@@ -199,7 +200,7 @@ class ProductInfo extends Component {
     });
   };
   handleOrder = e => {
-    if (!localStorage.getItem("userId")) {
+    if (!cookie.load("userinfo")) {
       e.preventDefault();
       document.getElementById("loginFrame").style.visibility = "visible";
     }

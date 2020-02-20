@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Redirect } from "react-router-dom";
+import cookie from 'react-cookies';
 
 export const ProtectedRouteAdmin = ({
   component: Component,
@@ -9,9 +10,9 @@ export const ProtectedRouteAdmin = ({
     <Route
       {...rest}
       render={props => {
-        if (localStorage.getItem("userId")&&localStorage.getItem("userRole")==="admin") {
+        if (cookie.load("userinfo")&&localStorage.getItem("userRole")==="admin") {
           return <Component {...props} />;
-        }else if(localStorage.getItem("userId")&&localStorage.getItem("userRole")==="user"){
+        }else if(cookie.load("userinfo")&&localStorage.getItem("userRole")==="user"){
           return (
             <Redirect
               to={{

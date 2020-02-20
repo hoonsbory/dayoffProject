@@ -1,5 +1,5 @@
 Arguments: 
-  /home/ubuntu/.nvm/versions/node/v12.14.1/bin/node /home/ubuntu/.nvm/versions/node/v12.14.1/bin/yarn start
+  /home/ubuntu/.nvm/versions/node/v12.14.1/bin/node /home/ubuntu/.nvm/versions/node/v12.14.1/bin/yarn add react-cookie
 
 PATH: 
   /home/ubuntu/.nvm/versions/node/v12.14.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/java-8-openjdk-amd64/bin
@@ -14,12 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  SyntaxError: /home/ubuntu/dayoff-react/package.json: Unexpected string in JSON at position 1661
-      at JSON.parse (<anonymous>)
-      at /home/ubuntu/.nvm/versions/node/v12.14.1/lib/node_modules/yarn/lib/cli.js:1625:59
-      at Generator.next (<anonymous>)
-      at step (/home/ubuntu/.nvm/versions/node/v12.14.1/lib/node_modules/yarn/lib/cli.js:304:30)
-      at /home/ubuntu/.nvm/versions/node/v12.14.1/lib/node_modules/yarn/lib/cli.js:315:13
+  Error: ENOENT: no such file or directory, lstat '/home/ubuntu/dayoff-react/node_modules/webpack/node_modules/terser-webpack-plugin/node_modules'
 
 npm manifest: 
   {
@@ -77,12 +72,12 @@ npm manifest:
         ">0.2%",
         "not dead",
         "not op_mini all"
-        "ie >= 11"
       ],
       "development": [
         "last 1 chrome version",
         "last 1 firefox version",
-        "last 1 safari version"
+        "last 1 safari version",
+        "ie 11"
       ]
     },
     "proxy": "https://jaehoon-dayoff.ml:8443",

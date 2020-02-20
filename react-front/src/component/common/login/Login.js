@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { Component } from 'react';
 import LoginMenu from '../../common/login/LoginMenu';
 import './login.css';
+import cookie from 'react-cookies';
 
 class Login extends Component {
     state={
@@ -10,7 +11,7 @@ class Login extends Component {
 
 
     componentDidMount(){
-        if(localStorage.getItem("userId")){
+        if(cookie.load("userinfo")){
             this.setState({
                 login:true
             })
@@ -48,6 +49,7 @@ class Login extends Component {
         localStorage.removeItem("userId");
         localStorage.removeItem("userRole");
         localStorage.removeItem("userName");
+	cookie.remove('userinfo', {path : '/'})
 
         this.setState({
             login:false
@@ -63,7 +65,7 @@ class Login extends Component {
     }
 
     render() {
-        const login=localStorage.getItem("userId")?'로그아웃':'로그인';
+        const login=cookie.load("userinfo")?'로그아웃':'로그인';
         return (
             <span className='logSpan'>
                     <span onClick={this.handleLogin}>{login}</span>

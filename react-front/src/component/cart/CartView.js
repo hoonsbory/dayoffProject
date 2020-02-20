@@ -4,6 +4,7 @@ import Cart from './Cart';
 import { Link } from 'react-router-dom';
 import LoginMenu from '../common/login/LoginMenu';
 import './CartView.css';
+import cookie from 'react-cookies';
 
  class CartView extends Component {
    state = {
@@ -113,7 +114,7 @@ import './CartView.css';
      this.handleCartView();
    }
    handleOrder = e => {
-     if (!localStorage.getItem("userId")) {
+     if (!cookie.load("userinfo")) {
        e.preventDefault();
        document.getElementById("loginFrame").style.visibility = "visible";
      }

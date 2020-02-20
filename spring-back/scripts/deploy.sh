@@ -20,7 +20,7 @@ echo "> jar 배포"
 
 cd /home/ubuntu/build
 
-nohup java -jar dayoff-0.0.1-SNAPSHOT.jar > /dev/null 2> /dev/null < /dev/null &
+nohup java -jar dayoff-0.0.1-SNAPSHOT.jar > /dev/null 2>&1 &
 
 
 

@@ -22,5 +22,8 @@ public interface RecommendRepository extends JpaRepository<RecommendByCategory,I
 
  @Query(value="select * from recommendByCategory limit 10", nativeQuery = true)
  List<RecommendByCategory> best10();
+ 
+ @Query(value="select * from recommendByCategory limit 4", nativeQuery = true)
+ List<RecommendByCategory> best4();
 
 }

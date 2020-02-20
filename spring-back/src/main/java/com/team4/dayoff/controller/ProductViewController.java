@@ -10,8 +10,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.team4.dayoff.entity.Category;
 import com.team4.dayoff.entity.ProductView;
+import com.team4.dayoff.entity.RecommendByCategory;
 import com.team4.dayoff.repository.CategoryRepository;
 import com.team4.dayoff.repository.ProductViewRepository;
+import com.team4.dayoff.repository.RecommendRepository;
+
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort.Direction;
 import org.springframework.data.web.PageableDefault;
@@ -24,7 +27,9 @@ public class ProductViewController {
     
     @Autowired
     CategoryRepository categoryRepository;
-    
+	
+	@Autowired
+	RecommendRepository recommendRepository;
 
     
     @GetMapping("/productTop")
@@ -58,8 +63,9 @@ public class ProductViewController {
 	}
 
 	@GetMapping("/TopBannerList")
-	public List<ProductView> TopBannerList(){
-		return productRepository.TopBannerList();
+	public List<RecommendByCategory> best4(){
+
+		return recommendRepository.best4();
 	}
 	
 //	

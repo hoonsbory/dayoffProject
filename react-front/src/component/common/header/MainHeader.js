@@ -5,6 +5,7 @@ import MainCategory from './category/MainCategory';
 import Login from '../login/Login'
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import cookie from 'react-cookies';
 
 export default class MainHeader extends Component {
   state = {
@@ -14,7 +15,7 @@ export default class MainHeader extends Component {
     
     componentDidMount() {
      window.scrollTo(0, 0);
-      if(localStorage.getItem("userId")){
+      if(cookie.load("userinfo")){
         this.setState({
           login:true
         })
@@ -63,7 +64,7 @@ export default class MainHeader extends Component {
           <ul className='MToplogin_Info'>
           <li>{localStorage.getItem("userName")}</li>
           <li><Link><Login history={this.props.history}></Login></Link></li>  &nbsp;&nbsp;&nbsp;
-          <li>{localStorage.getItem("userRole")==="admin"?<Link to='/admin/orders'>ADMIN</Link>:<Link to='/mypage/myorders'>마이페이지</Link>}</li>
+          <li>{cookie.load("userinfo") ? (localStorage.getItem("userRole")==="admin" ? <Link to='/admin/orders'>ADMIN</Link>:<Link to='/mypage/myorders'>마이페이지</Link>) : ""}</li>
           <li><Link to='/cart'> <img className='Mcartlogo' alt="cart" src='/images/cartlogo.png' /> 장바구니</Link></li>
               <li><HeaderSearch /></li>
           </ul>

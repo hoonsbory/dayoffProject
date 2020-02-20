@@ -38,9 +38,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         "/usersAnalysis/user/month/{year}","/usersAnalysis/user/withdrawReasons/{year}","/usersAnalysis/login/sexAndAge/{yearMonth}"
         ,"/usersAnalysis/login/month/{year}","/ordersAnalysis","/ordersAnalysis/order/sexAndAge/{yearMonth}","/ordersAnalysis/order/month/{year}"
         ,"/ordersAnalysis/order/refundReasons/{year}","/addProduct","/addProductProcess","/addSeveralProductProcess",
-        "/getProduct", "/stopProductSale","/resaleProduct")
+        "/getProduct", "/stopProductSale","/resaleProduct","/getUserList","/pickUpConfirm")
         .hasRole("ADMIN")
-        .antMatchers("/orderDetail/{groupId}","/myOrderLIst")
+        .antMatchers("/updateUserProcess","/addReview","/changeCode","/review","/cancelOrder",
+        "/refundRequestProcess","/refundRequest","/getGrade","/orderDetail/{groupId}",
+        "/myOrderLIst","/order","/payInfoList{userId}","/kakaoPay","/kakaoPaySuccess",
+        "/confirm","/orderCount","/getUser","/signUp","/signUpProcess","/withdraw","/withdrawProcess")
         .hasRole("REALUSER")
         .anyRequest()
         .permitAll()
@@ -57,7 +60,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         .accessDeniedPage("/deny")
         .and()
         .logout()
-        .logoutUrl("/logoutaa");
+        .logoutUrl("/logoutaa")
+        .invalidateHttpSession(true)
+        .deleteCookies("JSESSIONID");
         // .logoutSuccessUrl("/login");
     }
 

@@ -3,6 +3,7 @@ import Axios from 'axios';
 import '../../common/css/orderList.css'
 import MyordersTable from './MyordersTable';
 import ReactPaginate from 'react-paginate';
+import cookie from 'react-cookies';
 
 
 
@@ -88,7 +89,7 @@ shouldComponentUpdate(nextProps,nextState){
 //   console.log(this.props.change)
 //   if(nextProps.change!==this.props.change){
 //     console.log(this.props.change)
-//     this.orderList(sessionStorage.getItem("userId"),this.state.page)
+//     this.orderList(localStorage.getItem("userId"),this.state.page)
 
 //   }
 // }
@@ -97,7 +98,7 @@ shouldComponentUpdate(nextProps,nextState){
 
 
   render() {
-
+  
     
     return (
       <div className="TotalTable">

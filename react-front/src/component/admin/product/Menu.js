@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import cookie from 'react-cookies';
+
 
 class Menu extends Component {
     
 
     render() {
-        const login=localStorage.getItem("userId")?'로그아웃':'로그인';
+        const login=cookie.load("userinfo")?'로그아웃':'로그인';
         return (
             <div>
 

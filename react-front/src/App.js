@@ -52,7 +52,7 @@ class App extends Component {
           <Route path="/productList/search" component={ProductListPage} /> 
           <Route path="/productList/category/:category" component={ProductListPage} /> 
           </Switch>
-          <Route path="/admin" component={AdminNav} />
+          <ProtectedRouteAdmin path="/admin" component={AdminNav} />
           <Switch>
           <ProtectedRouteAdmin path="/admin/addProduct" component={ProductAdd} />
           <ProtectedRouteAdmin path="/admin/updateProduct/:productId" component={ProductUpdate} />
@@ -63,14 +63,14 @@ class App extends Component {
           <ProtectedRouteAdmin path="/admin/orders/orderDetail/:groupId" component={OrderDetail} />
           <ProtectedRouteAdmin path="/admin/orders" component={Orders} />
           </Switch>
-          <Route  path="/mypage" component={MypageNav} />
+          <ProtectedRoute path="/mypage" component={MypageNav} />
           <Switch>
           <ProtectedRoute path="/mypage/myorders/orderDetail/:groupId" component={OrderDetail} />
           <ProtectedRoute path="/mypage/refundRequest" component={RefundRequest} />
           <ProtectedRoute path="/mypage/myInfo" component={UpdateUser} />
           <ProtectedRoute path="/mypage/withdraw" component={Withdraw} />
           <ProtectedRoute path="/mypage/myGrade" component={UserGrade} />
-          <ProtectedRoute exact path="/mypage/myorders" component={Myorders} />
+          <Route exact path="/mypage/myorders" component={Myorders} />
           <ProtectedRoute exact path="/mypage/map" component={Map} />
           <ProtectedRoute exact path="/mypage/review/:orderId" component={NewPost} />
           {/* <ProtectedRoute path="/mypage/myorders" component={Myorders} /> */}

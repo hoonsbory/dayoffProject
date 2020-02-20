@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Redirect } from "react-router-dom";
+import cookie from 'react-cookies';
 
 export const ProtectedRoute = ({
   component: Component,
@@ -9,7 +10,7 @@ export const ProtectedRoute = ({
     <Route
       {...rest}
       render={props => {
-        if (localStorage.getItem("userId")) {
+        if (cookie.load("userinfo")&&localStorage.getItem("userId")) {
           return <Component {...props} />;
         } else {
           return (
