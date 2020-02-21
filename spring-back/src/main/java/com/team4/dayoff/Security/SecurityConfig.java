@@ -40,7 +40,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         ,"/ordersAnalysis/order/refundReasons/{year}","/addProduct","/addProductProcess","/addSeveralProductProcess",
         "/getProduct", "/stopProductSale","/resaleProduct","/getUserList","/pickUpConfirm")
         .hasRole("ADMIN")
-        .antMatchers("/updateUserProcess","/addReview","/changeCode","/review","/cancelOrder",
+        .antMatchers("/updateUserProcess","/addReview","/changeCode","/cancelOrder",
         "/refundRequestProcess","/refundRequest","/getGrade","/orderDetail/{groupId}",
         "/myOrderLIst","/order","/payInfoList{userId}","/kakaoPay","/kakaoPaySuccess",
         "/confirm","/orderCount","/signUp","/signUpProcess","/withdraw","/withdrawProcess")
