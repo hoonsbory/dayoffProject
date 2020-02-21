@@ -32,10 +32,14 @@ import Map from './component/common/Map/Map';
 import NewPost from './component/productDetail/review/NewPost'
 import MainHeader from './component/common/header/MainHeader';
 import MainFooter from './component/common/footer/MainFooter';
-
+import HttpsRedirect from 'react-https-redirect';
 class App extends Component {
+
+
   render() {
+    
     return (
+      <HttpsRedirect>
       <div>
 
         <Switch>
@@ -87,6 +91,7 @@ class App extends Component {
           <Route path="/" component={MainFooter} />
           </Switch>
       </div>
+      </HttpsRedirect>
     );
   }
 }

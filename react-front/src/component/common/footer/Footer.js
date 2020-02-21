@@ -8,7 +8,7 @@ export default class Footer extends Component {
         <div className='FooterItem1'>
         <div className='Footer_info'>
             <h4>CS CENTER</h4>
-            <h2>1688-1360</h2>
+            <h2>1234-1234</h2>
             <a href> Week</a> &nbsp;&nbsp;&nbsp;
             <a href> 10:00~17:00</a><br></br>
             <a href> 주말, 공휴일은 휴무입니다.
@@ -22,13 +22,13 @@ export default class Footer extends Component {
         <div className='Footer_info'>
             <h4>ACCOUNT INFO</h4> <br></br>
             <a href> 농협 </a> &nbsp;&nbsp;&nbsp;
-            <a href> 317-6677-6677-11</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href> 123-1234-1234-12</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <a href> 국민 </a> &nbsp;&nbsp;&nbsp;
-            <a href> 96677-667751</a> <br></br>
+            <a href> 12345-123456</a> <br></br>
             <a href> 우체국 </a> &nbsp;&nbsp;&nbsp;
-            <a href> 400010-02-890732</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href> 123456-12-123456</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <a href> 우리 </a> &nbsp;&nbsp;&nbsp;
-            <a href> 1005-593-667788</a> <br></br><br></br>
+            <a href> 12345-123-123456</a> <br></br><br></br>
             <a href> 예금주 : (주)데이오프 </a><br></br>
             </div>
             </div>
@@ -37,12 +37,12 @@ export default class Footer extends Component {
             <div className='Footer_info'>
             <h4>RETURN</h4> <br></br>
             <a href> 교환/반품 정책 확인 </a><br></br>
-            <a href> 주소지 : 경기도 남양주시 도농동 부영아파트 301동 2202호
+            <a href> 주소지 : 경기도 남양주시 와부읍 덕소로
             </a>
             </div>
             </div>
                 <div className='footerLast'> <br></br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href>대한민국 ©2019 DayOff.Inc. All Rights Reserved</a><a className='footerLast2' href>이용약관 / 개인정보처리방침</a></div>
+                <a href>대한민국 ©2020 DayOff.Inc. All Rights Reserved</a><a className='footerLast2' href>이용약관 / 개인정보처리방침</a></div>
       </div>
     )
   }
