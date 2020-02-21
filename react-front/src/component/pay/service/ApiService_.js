@@ -7,13 +7,13 @@ class ApiService_{
         return axios.get(USER_API_BASE_URL);
     }
     fetchUserLevel(userId) {
-        return axios.get( USER_API_BASE_URL+'/payInfoList' + userId);
+        return axios.get('/payInfoList' + userId);
     }
     order(carts) {
-        return axios.post(USER_API_BASE_URL+"/order",carts);
+        return axios.post("/order",carts);
     }
     //  kakaopay(carts){
-    //      return axios.post(USER_API_BASE_URL+"/kakaoPay",carts);
+    //      return axios.post("/kakaoPay",carts);
     //  }
 
 
@@ -51,7 +51,7 @@ class ApiService_{
         // ,
         //     contentType: 'application/json'
         // })
-         return axios.post(USER_API_BASE_URL+"/kakaoPay",form);
+         return axios.post("/kakaoPay",form);
     }
 
 
