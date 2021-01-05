@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@synapsestudios/react-drop-n-crop": "^0.2.0",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "beauty-stars": "^1.0.4",
     "bootstrap": "^4.4.1",
     "chart.js": "^2.9.3",
