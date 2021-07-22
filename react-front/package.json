@@ -38,7 +38,7 @@
     "regenerator-runtime": "^0.13.3",
     "slick-carousel": "^1.8.1",
     "url-search-params-polyfill": "^8.0.0",
-    "xlsx": "^0.15.4"
+    "xlsx": "^0.17.0"
   },
   "scripts": {
     "start": "export PORT=3000 && cross-env HTTPS=true NODE_PATH=src react-scripts start",
